@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+.category {
+  display: flex;
+  justify-content: flex-start;
+}
+.searchbar {
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 730px) {
+  .category {
+    margin: 0 !important;
+  }
+  .searchbar {
+    margin: 10px 1px !important;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none !important;
+  }
+}
+@media (min-width: 730px) {
+  .mobile-view {
+    display: none;
+  }
+  .desktop-view {
+    display: block;
+    text-align: justify;
+  }
+}
