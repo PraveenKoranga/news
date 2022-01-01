@@ -4,7 +4,7 @@ import Newscard from "./Newscard";
 
 const News = () => {
   const [news, setNews] = useState([]);
-  const [categoryNews, setCategoryNews] = useState("");
+  const [categoryNews, setCategoryNews] = useState("sports");
   const [searchNews, setSearchNews] = useState("");
   const [error, setError] = useState("");
   const [alert, setAlert] = useState("");
